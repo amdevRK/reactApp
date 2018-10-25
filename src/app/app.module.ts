@@ -9,6 +9,8 @@ import { CommonLayoutComponent } from './ui/common-layout/common-layout.componen
 import { CommonHeaderComponent } from './ui/common-header/common-header.component';
 import { CommonFooterComponent } from './ui/common-footer/common-footer.component';
 import { AuthLayoutComponent } from './ui/auth-layout/auth-layout.component';
+import { QuestionsModule } from './questions/questions.module';
+import { TestsModule } from './tests/tests.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,11 @@ import { AuthLayoutComponent } from './ui/auth-layout/auth-layout.component';
     BrowserModule,
     RouterModule.forRoot(AppRoutes),
 
-    UiModule
+    UiModule,
+
+    QuestionsModule,
+
+    TestsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

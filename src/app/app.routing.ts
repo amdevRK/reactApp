@@ -18,6 +18,14 @@ export const AppRoutes: Routes = [
                 loadChildren: './dashboard/dashboard.module#DashboardModule'
             },
             {
+                path: 'questions',
+                loadChildren: './questions/questions.module#QuestionsModule'
+            },
+            {
+                path: 'tests',
+                loadChildren: './tests/tests.module#TestsModule'
+            },
+            {
                 path: 'customers',
                 loadChildren: './customers/customers.module#CustomersModule'
             }
