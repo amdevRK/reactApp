@@ -1,11 +1,16 @@
-import { Routes} from '@angular/router';
+import { Routes } from '@angular/router';
 
 import { DefaultComponent } from './default/default.component';
 
 export const routes: Routes = [
   {
-      path: '',
-      component:DefaultComponent
+    path: '',
+    redirectTo: 'default',
+    pathMatch: 'full',
+  },
+  {
+    path: 'default',
+    component: DefaultComponent
   }
 ];
 
